@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./main.css" />
+    <title>Notas musicales</title>
+  </head>
+  <body>
+    <main>
+      <section class="game section gridCenter">
+        <div class="borde">
+          <h1>
+            <i class="fas fa-music"></i>¿Sabe cómo se forman los acordes
+            mayores?<i class="fas fa-music"></i>
+          </h1>
+          <button class="empezar" id="empezar">Pulse para empezar el juego</button>
+
+          <h3>
+            Ingrese las 3 notas del acorde <span id="acordeRandom"></span> en cualquiera de sus variaciones
+          </h3>
+
+          <div class="contenedor">
+            <button data-note="do" class="botonNotas verde key">do</button>
+            <button data-note="do#" class="botonNotas rojo key">do#</button>
+            <button data-note="re" class="botonNotas verde key">re</button>
+            <button data-note="re#" class="botonNotas rojo key">re#</button>
+            <button data-note="mi" class="botonNotas verde key">mi</button>
+            <button data-note="fa" class="botonNotas rojo key">fa</button>
+            <button data-note="fa#" class="botonNotas verde key">fa#</button>
+            <button data-note="sol" class="botonNotas rojo key">sol</button>
+            <button data-note="sol#" class="botonNotas verde key">sol#</button>
+            <button data-note="la" class="botonNotas rojo key">la</button>
+            <button data-note="la#" class="botonNotas verde key">la#</button>
+            <button data-note="si" class="botonNotas rojo key">si</button>
+          </div>
+          <br />
+          <button class="rta" id="rta">Respuesta</button>
+
+          <div class="boton_reiniciar">
+            <button id="reiniciar">
+              <i class="fas fa-power-off fa-2x"></i>
+            </button>
+          </div>
+
+          <ul id="lista"></ul>
+          <p id="resultado"></p>
+        </div>
+
+        <audio id="do" src="notes/C.mp3"></audio>
+        <audio id="do#" src="notes/Db.mp3"></audio>
+        <audio id="re" src="notes/D.mp3"></audio>
+        <audio id="re#" src="notes/Eb.mp3"></audio>
+        <audio id="mi" src="notes/E.mp3"></audio>
+        <audio id="fa" src="notes/F.mp3"></audio>
+        <audio id="fa#" src="notes/Gb.mp3"></audio>
+        <audio id="sol" src="notes/G.mp3"></audio>
+        <audio id="sol#" src="notes/Ab.mp3"></audio>
+        <audio id="la" src="notes/A.mp3"></audio>
+        <audio id="la#" src="notes/Bb.mp3"></audio>
+        <audio id="si" src="notes/B.mp3"></audio>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/aa037f8851.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

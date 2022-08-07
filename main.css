@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --colorBlue: #002554;
+  --colorOrange: #5b6e92;
+  --h1Color: #424242;
+  --pColor: #5a5b5f;
+
+  --boton1: #5b6e92;
+  --boton2: #9a5f6c;
+  --titulosSize: 2rem;
+  --mediumSize: 1.875rem;
+  --smallSize: 1.25rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  color: var(--pColor);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h3 {
+  color: var(--colorBlue);
+  margin: 1rem 0;
+  font-size: var(--titulosSize);
+  text-align: center;
+}
+
+.section {
+  max-width: 1200px;
+  width: 100%;
+  width: calc(100% - 4rem);
+  margin: 3rem auto;
+}
+
+.borde {
+  border: 2px solid var(--colorBlue);
+  border-radius: 5px;
+  padding: 3rem;
+  position: relative;
+}
+
+.gridCenter {
+  display: grid;
+  place-items: center;
+}
+
+#acordeRandom {
+  border: 2px solid black;
+  padding: 5px 15px;
+  margin-right: 4px;
+}
+
+.empezar,
+.rta {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background-color: var(--colorOrange);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 2rem auto;
+}
+
+#reiniciar {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  color: var(--colorBlue);
+}
+
+.boton_reiniciar {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.disable {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+
+}
+
+
+.verde {
+  background-color: var(--boton1);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.rojo {
+  background-color: var(--boton2);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contenedor {
+  text-align: center;
+}
+
+.botonNotas {
+  display: inline-block;
+  font-size: var(--smallSize);
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+#lista {
+  color: var(--colorOrange);
+  opacity: 1;
+}
+
+#lista li {
+  color: black;
+}
+
+#resultado {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--mediumSize);
+}
+
+i {
+  margin-inline: 1rem;
+}
